@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 dot[i].style.borderRadius = "50%";
                 dot[i].classList.remove(`extended`);
             }
-            menuP.style.transform = "translate(100vw, 40px)";
+            menuP.style.transform = "translate(100vw, 50px)";
             menuP.style.boxShadow = "0px 0px 0px rgba(0,0,0,0)";
         } else {
             for (var i = 0; i < dot.length; i++) {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 dot[i].style.borderRadius = "5px";
                 dot[i].classList.add(`extended`);
             }
-            menuP.style.transform = "translate(calc(100vw - 200px), 40px)";
+            menuP.style.transform = "translate(calc(100vw - 200px), 50px)";
             menuP.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.7)";
         }
         isWide = !isWide; 
