@@ -6,9 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     menu.addEventListener("touchstart", clicked)
     menu.addEventListener("click", clicked)
-    
+
     function clicked(event) {
+
         console.log("clicked");
+
         if (isWide) {
             for (var i = 0; i < dot.length; i++) {
                 dot[i].style.width = "5px";
@@ -17,7 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             menuP.style.transform = "translate(100vw, 50px)";
             menuP.style.boxShadow = "0px 0px 0px rgba(0,0,0,0)";
-        } else {
+        } 
+        
+        else {
             for (var i = 0; i < dot.length; i++) {
                 dot[i].style.width = "30px"; 
                 dot[i].style.borderRadius = "5px";
@@ -26,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             menuP.style.transform = "translate(calc(100vw - 200px), 50px)";
             menuP.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.7)";
         }
+        
         isWide = !isWide; 
         console.log(isWide);
     };
