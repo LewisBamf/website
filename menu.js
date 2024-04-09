@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var isWide = false;
     var menuP = document.querySelector(".menu-page");
 
-    menu.addEventListener("click", function() {
+    menu.addEventListener("touchstart", clicked)
+    menu.addEventListener("click", clicked)
+    
+    function clicked(event) {
         console.log("clicked");
         if (isWide) {
             for (var i = 0; i < dot.length; i++) {
@@ -25,5 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         isWide = !isWide; 
         console.log(isWide);
-    });
+    };
 });
